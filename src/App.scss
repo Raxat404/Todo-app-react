@@ -1,0 +1,55 @@
+.auth-wrapper {
+	@apply min-h-screen w-full flex items-center justify-center bg-indigo-200;
+
+	.auth-container {
+		@apply bg-white w-[40%] h-[60vh] rounded-md shadow-md p-6 flex flex-col;
+
+		.auth-title {
+			@apply my-4 text-2xl text-slate-800 font-semibold;
+		}
+
+		.auth-form {
+			@apply flex flex-col mt-[32px];
+
+			input {
+				@apply px-6 py-4 mb-4 rounded-md bg-slate-100 text-xl text-slate-700;
+			}
+
+			button {
+				@apply px-6 py-4 bg-indigo-500 text-white text-2xl rounded-md;
+			}
+		}
+
+		.redirect-link {
+			@apply text-blue-500 font-semibold text-lg mt-6;
+		}
+	}
+}
+
+.layout {
+	@apply w-full h-screen flex;
+
+	.sidebar {
+		@apply w-[300px] h-screen sticky top-0 left-0 bg-indigo-300 shadow-lg rounded-r-lg p-6;
+
+		ul {
+			li {
+				a {
+					@apply my-4 py-4 px-6 block rounded-md text-xl text-white font-semibold;
+
+					&.active {
+						@apply bg-white shadow-md text-slate-700;
+					}
+				}
+			}
+		}
+	}
+}
+
+.main {
+	@apply w-full p-[30px];
+}
+
+.heading{
+	@apply mb-[32px] font-semibold text-2xl text-slate-600;
+}
